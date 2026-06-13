@@ -1,0 +1,7 @@
+[2026-06-13 09:43:46] Chưa có BOT_TOKEN.
+[2026-06-13 09:43:46] PULL BACKUP START: False Chưa cài backup_url/secret
+[2026-06-13 09:46:15] Chưa có BOT_TOKEN.
+[2026-06-13 09:46:15] PULL BACKUP START: False Chưa cài backup_url/secret
+[2026-06-13 09:46:15] Lỗi chạy TXT-DỰ-PHÒNG-MD5-400KB: Traceback (most recent call last): |   File "/mnt/data/kfix/app.py", line 742, in predict_from_namespace |     r = fn(md5_hex, gate_key, level) |   File "<string>", line 112, in predict_basic | NameError: name '_core' is not defined | 
+[2026-06-13 09:46:26] Chưa có BOT_TOKEN.
+[2026-06-13 09:46:26] PULL BACKUP START: False Chưa cài backup_url/secret
