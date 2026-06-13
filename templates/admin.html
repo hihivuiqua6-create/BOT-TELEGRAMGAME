@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+  <title>{{ title }}</title>
+  <meta name="theme-color" content="{{ cfg.get('accent','#8b5cf6') }}">
+  <style>:root{--a:{{ cfg.get('accent','#8b5cf6') }};}</style>
+  <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}?v=20260613">
+</head>
+<body>
+{% if not session.get('login') %}
+  <section class="login-page">
+    <div class="login-card glass">
+      <div class="logo-mark"><span></span></div>
+      <h1>KingBot Admin</h1>
+      <p class="mut">Đăng nhập để cấu hình bot, token, bank, backup và gói bán.</p>
+      {% if msg %}<div class="alert">{{ msg }}</div>{% endif %}
+      <form method="post" action="/login" class="form-stack">
+        <label>Mật khẩu admin</label>
+        <input type="password" name="password" placeholder="Nhập mật khẩu admin" autocomplete="current-password">
+        <button class="btn pri" type="submit">Đăng nhập</button>
+      </form>
+      <p class="hint">Mặc định: <code>admin123</code></p>
+    </div>
+  </section>
+{% else %}
+  <div class="app-shell">
+    <aside class="sidebar glass">
+      <div class="brand">
+        <div class="logo-mark mini"><span></span></div>
+        <div><h2>{{ cfg.get('shop_name','KingBot') }}</h2><p>HTML Admin UI</p></div>
+      </div>
+      <nav class="nav">
+        <a class="{{'on' if page=='dashboard' else ''}}" href="/">Dashboard</a>
+        <a class="{{'on' if page=='settings' else ''}}" href="/settings">Cài đặt</a>
+        <a class="{{'on' if page=='users' else ''}}" href="/users">Users</a>
+        <a class="{{'on' if page=='admins' else ''}}" href="/admins">Admin IDs</a>
+        <a class="{{'on' if page=='deposits' else ''}}" href="/deposits">Nạp tiền</a>
+        <a class="{{'on' if page=='feedback' else ''}}" href="/feedback">Feedback</a>
+        <a class="{{'on' if page=='broadcast' else ''}}" href="/broadcast">Thông báo</a>
+        <a class="{{'on' if page=='backup' else ''}}" href="/backup">Backup</a>
+        <a class="{{'on' if page=='logs' else ''}}" href="/logs">Logs</a>
+        <a href="/logout">Đăng xuất</a>
+      </nav>
+      <div class="side-foot">Bot: <b class="{{ 'ok' if bot_running else 'bad' }}">{{ 'đang chạy' if bot_running else 'chưa chạy' }}</b></div>
+    </aside>
+
+    <main class="main">
+      <header class="mobile-top glass">
+        <b>{{ cfg.get('shop_name','KingBot') }}</b>
+        <span>{{ 'Bot ON' if bot_running else 'Bot OFF' }}</span>
+      </header>
+      {% if msg %}<div class="alert">{{ msg }}</div>{% endif %}
+      {{ content|safe }}
+    </main>
+  </div>
+{% endif %}
+<script src="{{ url_for('static', filename='admin.js') }}?v=20260613"></script>
+</body>
+</html>
