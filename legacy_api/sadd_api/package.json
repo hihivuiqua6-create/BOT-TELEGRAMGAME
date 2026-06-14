@@ -1,0 +1,43 @@
+{
+  "name": "telegram-bot-sunwin",
+  "version": "1.0.0",
+  "description": "Telegram bot for Sunwin predictions",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "nodemon bot.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.2.0",
+    "@fastify/websocket": "^11.2.0",
+    "axios": "^1.13.5",
+    "cheerio": "^1.2.0",
+    "colors": "^1.4.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^4.22.1",
+    "fastify": "^5.7.4",
+    "firebase-admin": "^13.6.1",
+    "gl": "^8.1.6",
+    "https": "^1.0.0",
+    "mathjs": "^15.1.0",
+    "md5": "^2.3.0",
+    "node-cron": "^4.2.1",
+    "node-fetch": "^3.3.2",
+    "node-telegram-bot-api": "^0.64.0",
+    "path": "^0.12.7",
+    "puppeteer": "^24.36.1",
+    "puppeteer-core": "^24.36.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "sqlite3": "^5.1.7",
+    "winston": "^3.19.0",
+    "ws": "^8.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
