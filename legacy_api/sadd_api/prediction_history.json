@@ -1,0 +1,86 @@
+{
+  "history": {
+    "b52": [
+      {
+        "phien": "1852953",
+        "du_doan": "tai",
+        "ti_le": "85%",
+        "id": "@tiendataox",
+        "timestamp": "2026-04-01T19:58:10.763Z"
+      },
+      {
+        "phien": "1852953",
+        "du_doan": "tai",
+        "ti_le": "85%",
+        "id": "@tiendataox",
+        "timestamp": "2026-04-01T19:57:31.211Z"
+      },
+      {
+        "phien": "1852953",
+        "du_doan": "tai",
+        "ti_le": "85%",
+        "id": "@tiendataox",
+        "timestamp": "2026-04-01T19:57:30.993Z"
+      },
+      {
+        "phien": "1852953",
+        "du_doan": "tai",
+        "ti_le": "85%",
+        "id": "@tiendataox",
+        "timestamp": "2026-04-01T19:57:29.719Z"
+      },
+      {
+        "phien": "1852952",
+        "du_doan": "xiu",
+        "ti_le": "79%",
+        "id": "@mryanhdz",
+        "timestamp": "2026-04-01T19:56:47.831Z"
+      },
+      {
+        "phien": "1852952",
+        "du_doan": "xiu",
+        "ti_le": "79%",
+        "id": "@mryanhdz",
+        "timestamp": "2026-04-01T19:56:35.007Z"
+      }
+    ],
+    "hu": [
+      {
+        "phien": "6711767",
+        "du_doan": "xiu",
+        "ti_le": "82%",
+        "id": "@tiendataox",
+        "timestamp": "2026-04-07T20:28:18.633Z"
+      },
+      {
+        "phien": "6711765",
+        "du_doan": "xiu",
+        "ti_le": "81%",
+        "id": "@tiendataox",
+        "timestamp": "2026-04-07T20:25:18.739Z"
+      }
+    ],
+    "md5": [
+      {
+        "phien": "6773377",
+        "du_doan": "xiu",
+        "ti_le": "85%",
+        "id": "@tiendataox",
+        "timestamp": "2026-04-07T20:28:18.843Z"
+      },
+      {
+        "phien": "6773373",
+        "du_doan": "tai",
+        "ti_le": "69%",
+        "id": "@tiendataox",
+        "timestamp": "2026-04-07T20:25:19.013Z"
+      }
+    ]
+  },
+  "lastProcessedPhien": {
+    "b52": 1852953,
+    "hu": 6711767,
+    "md5": 6773377
+  },
+  "lastSaved": "2026-04-07T20:28:18.845Z"
+}

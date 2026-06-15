@@ -1,0 +1,14 @@
+V113 REAL-AI ALL-GAME
+- Nâng engine API cho HitClub, B52, LC79, SunWin, Baccarat.
+- API chuẩn để gắn HTML:
+  /api/game/hitclub
+  /api/game/b52
+  /api/game/lc79
+  /api/game/sunwin
+  /api/game/bcr
+  /api/baccarat
+  /api/predict?gate=hitclub
+  /api/predict/<tool_slug>
+- JSON trả result, side_label, confidence, pattern/bridge_type, period, dice, total.
+- Nhận diện cầu 1-1 đến 8-8, cả hai chiều T-X/X-T, bệt, bẻ bệt, Markov, tự học đoạn tail.
+- Không buff % ảo; % dựa trên backtest gần nhất + độ đồng thuận.
