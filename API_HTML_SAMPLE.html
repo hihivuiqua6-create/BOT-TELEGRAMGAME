@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KingBot API Sample</title></head>
+<body>
+  <h2>KingBot API gắn HTML</h2>
+  <select id="gate">
+    <option value="hitclub">HitClub</option><option value="b52">B52</option><option value="lc79">LC79</option><option value="sunwin">SunWin</option><option value="bcr">Baccarat</option>
+  </select>
+  <input id="history" placeholder="Tuỳ chọn: TXXTTX hoặc Baccarat PBPBBP" style="width:320px">
+  <button onclick="loadPredict()">Dự đoán</button>
+  <pre id="result">...</pre>
+<script>
+async function loadPredict(){
+  const gate = document.getElementById('gate').value;
+  const h = document.getElementById('history').value.trim();
+  const url = `/api/game/${gate}?level=pro` + (h ? `&history=${encodeURIComponent(h)}` : '');
+  const d = await fetch(url).then(r=>r.json());
+  document.getElementById('result').textContent =
+`Game: ${d.game}
+Phiên: ${d.period}
+Dự đoán: ${d.side_label || d.prediction}
+% thật: ${d.confidence}%
+Cầu: ${d.pattern || d.bridge_type}
+Backtest: ${d.backtest_rate || '-'} (${d.backtest_n || 0} mẫu)`;
+}
+</script>
+</body></html>
