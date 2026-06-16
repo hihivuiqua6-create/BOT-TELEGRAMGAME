@@ -1,0 +1,50 @@
+[
+  {
+    "phien": 3058510,
+    "Xuc_xac_1": 4,
+    "Xuc_xac_2": 1,
+    "Xuc_xac_3": 3,
+    "Tong": 8,
+    "Ket_qua": "Xỉu",
+    "du_doan": null,
+    "loai_cau": null,
+    "do_tin_cay": null,
+    "thoi_gian": "2026-04-11T12:43:56.273Z"
+  },
+  {
+    "phien": 3058513,
+    "Xuc_xac_1": 2,
+    "Xuc_xac_2": 3,
+    "Xuc_xac_3": 6,
+    "Tong": 11,
+    "Ket_qua": "Tài",
+    "du_doan": "Xỉu",
+    "loai_cau": "Không xác định",
+    "do_tin_cay": "50%",
+    "thoi_gian": "2026-04-11T12:47:26.292Z"
+  },
+  {
+    "phien": 3058514,
+    "Xuc_xac_1": 3,
+    "Xuc_xac_2": 1,
+    "Xuc_xac_3": 5,
+    "Tong": 9,
+    "Ket_qua": "Xỉu",
+    "du_doan": "Xỉu",
+    "loai_cau": "mini_5_tinh_toan_xac_suat_cao",
+    "do_tin_cay": "62%",
+    "thoi_gian": "2026-04-11T12:48:36.279Z"
+  },
+  {
+    "phien": 3058515,
+    "Xuc_xac_1": 4,
+    "Xuc_xac_2": 5,
+    "Xuc_xac_3": 5,
+    "Tong": 14,
+    "Ket_qua": "Tài",
+    "du_doan": "Xỉu",
+    "loai_cau": "model1",
+    "do_tin_cay": "64%",
+    "thoi_gian": "2026-04-11T12:49:46.282Z"
+  }
+]
