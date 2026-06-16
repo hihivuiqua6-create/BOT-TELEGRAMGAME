@@ -1,3 +1,0 @@
-LC79 MD5 TX API: https://wtxmd52.tele68.com/v1/txmd5/sessions
-Button: API -> LC79 MD5 TX
-Endpoints: /api/game/lc79md5, /api/predict/lc79md5_tool, /api/predict/lc79_md5
